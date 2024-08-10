@@ -3,8 +3,8 @@ import dotenv from "dotenv"
 import connectDB from "./db/index.js";
 import {app} from './app.js'
 
-dotenv.config({
-    path: './env'
+dotenv.config({ //use for as the file loads then all the environment variables gets loaded for all files
+    path: './.env'
 })
 
 // Handle other uncaught errors in the application

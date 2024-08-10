@@ -72,7 +72,9 @@ userSchema.methods.generateAccessToken = function(){
             username:this.username,
             fullName:this.fullName  //fullName this is payload key from schema and this.fullName is coming from our database
         },
+
         process.env.ACCESS_TOKEN_SECRET,
+        
         {
             expiresIn:process.env.ACCESS_TOKEN_EXPIRY
         }
